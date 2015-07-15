@@ -1,0 +1,215 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+/* Sergio Fredes - BibVir */
+/* importamos el archivo de fonts que creamos tambien en sass*/
+@font-face {
+  font-family: open;
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fuente/OpenSans-Light.ttf"); }
+
+.paneles.home {
+  width: 100%; 
+  float: right;
+  margin-bottom: 23px;
+}
+
+.home {
+  height: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 0px; }
+  .home h4 {
+    color: #d32536;
+    margin: 0px;
+    padding: 10px; }
+  .home.informacion {
+    width: 48%;
+    float: left;
+    background: #e1e1e1; }
+  .home.recientes {
+    width: 48%;
+    float: right;
+    background: #e1e1e1; }
+
+/* scss - estilo cuerpo*/
+body {
+  font-family: Ubuntu, open;
+  font-weight: 300;
+  font-size: large;
+  background-color: #dbdbd0;
+  background-image: url("../imagenes/fondo.png");
+  background-attachment: fixed; 
+  margin: 0;
+}
+
+/* scss - estilo conteneder*/
+div#contenedor {
+  width: 100%;
+  max-width: 100%;
+  color: #555555;
+  margin: auto auto;
+  box-shadow: 0px 0px 10px #555;
+  background-color: white;
+  background-image: url("../imagenes/fondo-conte.png"); }
+
+/* scss - estilo header*/
+div.header {
+  height: 130px;
+  background-color: #e1e1e1; }
+  div.header p {
+    color: #555555; }
+  div.header h1 {
+    display: none; }
+  div.header img {
+    width: 300px;
+    padding: 10px; }
+
+/* scss - estilo menu*/
+div.menu ul {
+  margin: 0px;
+  background-color: #d32536;
+  background-image: gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.3)), to(rgba(184, 70, 70, 0.3)));
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.3)), to(rgba(184, 70, 70, 0.3)));
+  background-image: -moz-linear-gradient(0% 100% 90deg, rgba(0, 0, 0, 0.3), rgba(184, 70, 70, 0.3));
+  text-align: left; }
+div.menu li {
+  display: inline;
+  line-height: 35px; }
+  div.menu li a {
+    color: #fff;
+    padding: 0px 3px 0px 3px;
+    text-decoration: none;
+    text-shadow: #000 0 -1px 0px;
+    transition: all .5s; }
+    div.menu li a:hover {
+      color: white;
+      text-shadow: #000 0 2px 6px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 0px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 0px;
+      transition: all .5s; }
+
+div.contenido {
+  padding: 0px 10px 0px 10px; }
+
+div.footer {
+  background-color: #7a7a7a;
+  font-size: small;
+  text-align: center;
+  color: white; }
+  div.footer p {
+    padding: 10px; }
+    div.footer p span {
+      font-weight: 900; }
+
+table.lista {
+  border-spacing: 0px;
+  border-color: #DFDFDF;
+  background-color: #F9F9F9;
+  border-width: 1px 0;
+  border-width: 1px;
+  border-style: solid;
+  -moz-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  width: 100%;
+  margin: 10px 0px 0px 0px; }
+  table.lista th {
+    border-top-color: white;
+    border-bottom-color: #DFDFDF;
+    border-width: 1px 0;
+    border-style: solid;
+    background-color: #F9F9F9;
+    padding: 5px;
+    background-image: -ms-linear-gradient(top, #f9f9f9, #ececec);
+    background-image: -moz-linear-gradient(top, #f9f9f9, #ececec);
+    background-image: -o-linear-gradient(top, #f9f9f9, #ececec);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ececec));
+    background-image: -webkit-linear-gradient(top, #f9f9f9, #ececec);
+    background-image: linear-gradient(top, #f9f9f9, #ececec); }
+  table.lista td {
+    border-bottom: 1px dotted #e1e1e1;
+    padding: 4px; }
+
+p.error {
+  font-size: small;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px dotted #d32536;
+  margin: 10px 0px 0px 0px;
+  background-color: #F7A946; }
+
+p.info {
+  font-size: small;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px dotted #040A02;
+  margin: 10px 0px 0px 0px;
+  background-color: #90BD4B; }
+
+ul.idioma {
+  float: right;
+  list-style: none;
+}
+table {
+  width: 100%; }
+  table.ficha {
+    margin: 0px 0px 20px 0px;
+    border: 1px dotted #e1e1e1;
+    border-spacing: 0px; }
+    table.ficha td.dato {
+      border-bottom: 1px dotted #e1e1e1;
+      padding: 5px; }
+    table.ficha td.metadato {
+      padding: 5px;
+      border-bottom: 1px dotted #ff9898;
+      width: 15%;
+      background: #FFD5D9;
+      color: #333; }
+
+@media (max-width: 400px) {
+  table.lista td {
+    padding: 0px; }
+
+  div.header img {
+    width: 270px; }
+
+  .home {
+    height: 10em;
+    border: 0px solid #d1d1d1; }
+    .home.informacion {
+      width: 100%;
+      background: #e1e1e1; }
+    .home.recientes {
+      width: 100%;
+      background: #e1e1e1;
+      margin: 5px 0px 0px 0px; } }
+div.admin ul {
+  list-style: none;
+  font-weight: 900; }
+div.admin a {
+  padding-left: 30px;
+  line-height: 30px;
+  margin-left: 0px;
+  font-weight: 300;
+  transition: all .5s;
+  color: #d32536;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 23px; }
+  div.admin a:hover {
+    margin-left: 10px;
+    transition: all .5s; }
+  div.admin a.adocu {
+    background-image: url("../imagenes/agregar-documento.png"); }
+  div.admin a.edocu {
+    background-image: url("../imagenes/editar-borrar.png"); }
+  div.admin a.acole {
+    background-image: url("../imagenes/agregar-coleccion.png"); }
+  div.admin a.ecole {
+    background-image: url("../imagenes/editar-borrar.png"); }

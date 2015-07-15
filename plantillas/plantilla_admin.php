@@ -1,0 +1,15 @@
+<?php 
+	include('incluidos/principio.htm'); 
+	include('incluidos/header.htm');
+	include('incluidos/menu_admin.htm');  
+?>
+<div class="contenido">
+	<?php
+		if (file_exists( $path_modulo )) include( $path_modulo );
+		else die('Error al cargar el módulo <b>'.$modulo.'</b>. No existe el archivo <b>'.$conf[$modulo]['archivo'].'</b>');
+	?>
+</div>
+
+<?php 
+include('incluidos/footer.htm'); 
+?>
