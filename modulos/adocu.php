@@ -13,7 +13,11 @@ return $llave;
 }
 ?>
 <form method="post" action="?modulo=proceso" enctype="multipart/form-data">
-<input style="display:none" name="codigo" value="<?php echo generarCodigo(8); ?>" />
+
+<!-- generamos codigo aleatorio para cada archivo -->
+<input style="display:none" name="codigo" value="<?php echo generarCodigo(10); ?>" />
+
+
 <h2>Agregar nuevo documento</h2>
 	<table>
 		<tr>
@@ -24,30 +28,44 @@ return $llave;
 						while($row = mysql_fetch_assoc($result))
 						{ 
 					?> 
-					<option value="<?php echo $row['id_col'] ?>"><?php echo $row['nombre'] ?></option>
+					<option value="<?php echo $row['coleccion_id'] ?>"><?php echo $row['nombre'] ?></option>
 					<?php } ?>		
 				</select></td>
 		</tr>
 		<tr>
-			<td>Título</td>
-			<td><input type="text" x-webkit-speech="x-webkit-speech" required="required" name="titulo" /></td>
+			<td>Titulo</td>
+			<td><input type="text" name="titulo" /></td>
 		</tr>
 		<tr>
 			<td>Autor</td>
-			<td><input type="text" x-webkit-speech="x-webkit-speech"  name="autor" /></td>
+			<td><input type="text" name="autor" /></td>
 		</tr>
 		<tr>
-			<td>Materia</td>
-			<td><input type="text" x-webkit-speech="x-webkit-speech"  name="materia" /></td>
+			<td>Resumen:</td>
+			<td><textarea name="resumen"> </textarea></td>
 		</tr>
 		<tr>
-			<td>Resumen</td>
-			<td><textarea rows="4" name="resumen" ></textarea></td>
+			<td>Fecha:</td>
+			<td><input name="fecha" /></td>
 		</tr>
+		<tr>
+			<td>Editor:</td>
+			<td><input name="editor" /></td>
+		</tr>
+		<tr>
+			<td>Idioma:</td>
+			<td><input name="idioma" /></td>
+		</tr>
+		<tr>
+			<td>Tema:</td>
+			<td><input name="tema" /></td>
+		</tr>
+
 		<tr>
 			<td>Documento</td>
 			<td>
-				<INPUT type="file" name="uploaded" size="30">
+				<INPUT required="required" type="file" name="archivo" value="Archivo" size="30">
+				<INPUT required="required" type="file" name="imagen" value="Miniatura" size="30">
 			</td>
 			</tr>
 	</table>

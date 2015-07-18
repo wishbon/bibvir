@@ -1,5 +1,5 @@
 <?php
-    $result = mysql_query("SELECT * FROM bv_coleccion WHERE id_col='$_GET[id]'");    
+    $result = mysql_query("SELECT * FROM bv_coleccion WHERE coleccion_id='$_GET[id]'");    
 	while($row = mysql_fetch_assoc($result))
 	{ 
 ?>
@@ -13,12 +13,13 @@
 <h3>Documentos en esta colección</h3>
 <?php
 	$coleccion=$_GET['id'];
-	$result = mysql_query("SELECT * FROM bv_documento INNER JOIN bv_coleccion ON bv_documento.id_coleccion = bv_coleccion.id_col WHERE bv_coleccion.id_col = $coleccion ORDER BY bv_documento.id_doc DESC");
+	$result = mysql_query("SELECT * FROM bv_documento, bv_archivos WHERE bv_documento.coleccion_id=$coleccion AND bv_archivos.archivo_id=bv_documento.documento_id AND bv_archivos.archivo_formato='m'");
 		while ($row = mysql_fetch_array($result)) {
 ?>
-<ul>
+<ul class="documentos">
 	<li>
-		<a href="?modulo=fichadoc&id=<?php echo $row['id_doc']; ?>"><?php echo $row['titulo']; ?></a>
+	<img src="./subidos/miniaturas/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura">
+		<!-- <a href="?modulo=fichadoc&id=<?php echo $row['id']; ?>">f</a> -->
 	</li>
 </ul>
 <?php } ?>

@@ -13,7 +13,7 @@ $bd_prefix = 'bv_';
 
 
 define('MODULO_DEFECTO', 'home');
-define('PLANTILLA_DEFECTO', 'plantilla.php');
+define('PLANTILLA', 'plantilla.php');
 define('PLANTILLA_ADMIN', 'plantilla_admin.php');
 define('MODULO_PATH', realpath('./modulos/'));
 define('PLANTILLA_PATH', realpath('./plantillas/'));
@@ -21,10 +21,10 @@ define('PLANTILLA_PATH', realpath('./plantillas/'));
 //HOME
 $conf['home'] = array(
 		'archivo' => 'home.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
+		'plantilla' => PLANTILLA ); 
 
 // ADMIN
-$conf['admin'] = array(
+$conf['bibvir-admin'] = array(
 		'archivo' => 'admin.php',
 		'plantilla' => PLANTILLA_ADMIN ); 
 
@@ -41,37 +41,32 @@ $conf['acole'] = array(
 // ELIMINAR DOCUMENTO
 $conf['edocu'] = array(
 		'archivo' => 'edocu.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
+		'plantilla' => PLANTILLA ); 
 
 // ELIMINAR COLECCION
 $conf['ecole'] = array(
 		'archivo' => 'ecole.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
+		'plantilla' => PLANTILLA ); 
 
 // PROCESAR TODO
 $conf['proceso'] = array(
 		'archivo' => 'proce.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
-
-// LISTA TITULOS
-$conf['titulo'] = array(
-		'archivo' => 'titulo.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
-
-// LISTA COLECCIONES
-$conf['colecc'] = array(
-		'archivo' => 'colecc.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
+		'plantilla' => PLANTILLA ); 
 
 // FICHA COLECCION
 $conf['fichacol'] = array(
 		'archivo' => 'fichacol.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
+		'plantilla' => PLANTILLA ); 
 
-// FICHA TITULO
+// FICHA ETIQUETAS
+$conf['fichatag'] = array(
+		'archivo' => 'fichatag.php',
+		'plantilla' => PLANTILLA ); 
+
+// FICHA DOCUMENTO
 $conf['fichadoc'] = array(
 		'archivo' => 'fichadoc.php',
-		'plantilla' => PLANTILLA_ADMIN ); 
+		'plantilla' => PLANTILLA ); 
 
 // ARTICULO
 $conf['articulo'] = array(

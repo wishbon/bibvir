@@ -1,7 +1,33 @@
 <div class="menu">
 	<ul>
-		<li><a href="?modulo=home">Inicio</a></li>
-		<li><a href="?modulo=titulo">Título</a></li>
-		<li><a href="?modulo=colecc">Colecciones</a></li>
+		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
+		<li><?php echo $lang['MENU_COLECCIONES']; ?>
+				<ul>
+				<?php
+					$result = mysql_query("SELECT * FROM bv_coleccion ORDER BY bv_coleccion.coleccion_id DESC ");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=fichacol&id=<?php echo $row['coleccion_id']; ?>"><?php echo $row['nombre']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+
+		</li>
+		<li>Etquetas
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=15");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=fichatag&tag=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>Ordenar por</li>
+		<li style="float:right"><a href="index.rb?lang=en">Eng</a>
+				<a href="index.rb?lang=es">Esp</a></li>
 	</ul>
 </div>

@@ -4,7 +4,7 @@
 	}
 ?>
 <form method="post" action="?modulo=proceso">
-<h2>Agregar nueva colección</h2>
+<h2>Agregar nueva categoría</h2>
 <table>
 	<tr>
 		<td>Nombre</td>
@@ -15,5 +15,5 @@
 		<td><textarea rows="4" name="descripcion" x-webkit-speech="x-webkit-speech" ></textarea></td>
 	</tr>
 </table>
-<input type="submit" name="acole" value="Agregar colección">
+<input type="submit" name="acole" value="Agregar categoría">
 </form>

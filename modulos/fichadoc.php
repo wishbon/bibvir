@@ -1,6 +1,6 @@
 <?php
 $coleccion=$_GET['id'];
-	$result = mysql_query("SELECT * FROM bv_documento WHERE bv_documento.id_doc = $coleccion ORDER BY bv_documento.id_doc DESC ");
+	$result = mysql_query("SELECT * FROM bv_documento WHERE bv_documento.id = $coleccion ORDER BY bv_documento.documento_id DESC ");
 		while ($row = mysql_fetch_array($result)) {
 ?>
 <!-- extractor de metadatos para gestor de citas -->

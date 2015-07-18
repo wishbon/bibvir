@@ -14,7 +14,7 @@
 <?php
 
 	
-	$result = mysql_query("SELECT * FROM bv_documento, bv_coleccion WHERE bv_documento.id_coleccion = bv_coleccion.id_col ORDER BY titulo ASC");
+	$result = mysql_query("SELECT * FROM bv_documento, bv_coleccion WHERE bv_documento.coleccion_id = bv_coleccion.coleccion_id ORDER BY bv_documento.coleccion_id ASC");
 
 		while ($row = mysql_fetch_array($result)) {
 ?>
@@ -26,10 +26,10 @@
 	} 
 </script>
 	<tr>
-		<td><?php echo $row['titulo'] ?></td>
+		<td><?php echo $row['coleccion_id'] ?></td>
 		<td><?php echo $row['nombre'] ?></td>
 		<td>
-			<a href="?modulo=proceso&borrardoc=<?php echo $row['id_doc']?>" onclick="borrar();" name="borrardoc">
+			<a href="?modulo=proceso&borrardoc=<?php echo $row['coleccion_id']?>" onclick="borrar();" name="borrardoc">
 			<img src="incluidos/imagenes/borrar.png">
 			</a>
 		</td>
