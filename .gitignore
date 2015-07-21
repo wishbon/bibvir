@@ -1,0 +1,5 @@
+./subidos/archivos/*.php
+./subidos/miniaturas/*.png
+./subidos/miniaturas/*.jpg
+./subidos/miniaturas/*.bmp
+./subidos/miniaturas/*.gif

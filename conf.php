@@ -22,6 +22,10 @@ define('PLANTILLA_PATH', realpath('./plantillas/'));
 $conf['home'] = array(
 		'archivo' => 'home.php',
 		'plantilla' => PLANTILLA ); 
+//BUSCAR
+$conf['buscar'] = array(
+		'archivo' => 'buscador.php',
+		'plantilla' => PLANTILLA ); 
 
 // ADMIN
 $conf['bibvir-admin'] = array(
@@ -66,6 +70,21 @@ $conf['fichatag'] = array(
 // FICHA DOCUMENTO
 $conf['fichadoc'] = array(
 		'archivo' => 'fichadoc.php',
+		'plantilla' => PLANTILLA ); 
+
+// FICHA DOCUMENTO
+$conf['autor'] = array(
+		'archivo' => 'autor.php',
+		'plantilla' => PLANTILLA ); 
+
+// FICHA DOCUMENTO
+$conf['tema'] = array(
+		'archivo' => 'tema.php',
+		'plantilla' => PLANTILLA ); 
+
+// FICHA DOCUMENTO
+$conf['editorial'] = array(
+		'archivo' => 'editorial.php',
 		'plantilla' => PLANTILLA ); 
 
 // ARTICULO
