@@ -1,6 +1,7 @@
+<div class="fichadoc">
 <table>
 	<tr>
-	<td rowspan="6">
+	<td rowspan="6" class="miniatura">
 		<?php 
 		$iddoc=$_GET['id'];
 		$result = mysql_query("SELECT * FROM bv_archivos WHERE bv_archivos.archivo_formato='m' AND bv_archivos.archivo_id = '$iddoc'");
@@ -15,7 +16,7 @@
 		<img src="./subidos/miniaturas/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura">
 		<?php } ?>
 	</td>
-		<td>Titulo:</td>
+		<td class="metadato"><?php echo $lang['TITULO']; ?></td>
 		<td>
 			<?php
 			$iddoc=$_GET['id'];
@@ -26,7 +27,7 @@
 		</td>
 	</tr>
 	<tr>
-	<td>Autor:</td>
+	<td class="metadato"><?php echo $lang['AUTOR']; ?></td>
 		<td>
 			<?php
 			$iddoc=$_GET['id'];
@@ -34,13 +35,13 @@
 			while ($row = mysql_fetch_array($result)) {
 				echo '<a href="?modulo=autor&autor='.$row['contenido'].'">';
 				echo $row['contenido'];
-				echo '</a>';
+				echo '</a> <span class="separador">-</span> ';
 			} ?></a> 
 
 		</td>
 	</tr>
 	<tr>
-	<td>Resumen:</td>
+	<td class="metadato"><?php echo $lang['RESUMEN']; ?></td>
 		<td>
 			<?php
 			$iddoc=$_GET['id'];
@@ -51,7 +52,7 @@
 		</td>
 	</tr>
 	<tr>
-	<td>Editorial:</td>
+	<td class="metadato"><?php echo $lang['EDITORIAL']; ?></td>
 		<td>
 			<?php
 			$iddoc=$_GET['id'];
@@ -59,23 +60,23 @@
 			while ($row = mysql_fetch_array($result)) {
 				echo '<a href="?modulo=editorial&editorial='.$row['contenido'].'">';
 				echo $row['contenido'];
-				echo '</a>';
+				echo '</a> <span class="separador">-</span>';
 			} ?>
 		</td>
 	</tr>
 	<tr>
-	<td>Año:</td>
+	<td class="metadato"><?php echo $lang['FECHA']; ?></td>
 		<td>
-			<a href=""><?php
+			<?php
 			$iddoc=$_GET['id'];
 			$result = mysql_query("SELECT elemento_id,contenido FROM bv_elementos_cont WHERE bv_elementos_cont.documento_id = '$iddoc' AND bv_elementos_cont.elemento_id=6");
 			while ($row = mysql_fetch_array($result)) {
 				echo $row['contenido'];
-			} ?></a>
+			} ?>
 		</td>
 	</tr>
 	<tr>
-	<td>Temas:</td>
+	<td class="metadato"><?php echo $lang['TEMAS']; ?></td>
 		<td>
 			<?php
 			$iddoc=$_GET['id'];
@@ -83,8 +84,9 @@
 			while ($row = mysql_fetch_array($result)) {
 				echo '<a href="?modulo=tema&tema='.$row['contenido'].'">';
 				echo $row['contenido'];
-				echo '</a> - ';
+				echo '</a> <span class="separador">-</span> ';
 			} ?>
 		</td>
 	</tr>
 </table>
+</div>
