@@ -97,23 +97,22 @@ exit;
 mysql_close($link);
 }
 //Verificamos si el titulo ingresado existe en la base de datos, de ser así se informa al usuario con un mensaje
-$titulo= mysql_query("SELECT contenido FROM bv_elementos_cont WHERE titulo='$_POST[titulo]'"); 
+$titulo= mysql_query("SELECT contenido FROM bv_elementos_cont WHERE contenido='$_POST[titulo]'"); 
 
 if(mysql_num_rows($titulo)>0) { 
 header("location: ?modulo=adocu&error=<p class='error'>El nombre ya existe</p>"); 
 exit;
 mysql_close($link);
 } 
-
 else {
 
-$titulo = $_POST[titulo];
-$resumen = $_POST[resumen];
-$fecha = $_POST[fecha];
-$idioma = $_POST[idioma];
-$tema = $_POST[tema];
+$resumen = $_POST['resumen'];
+$titulootro = $_POST['titulo'];
+$fecha = $_POST['fecha'];
+$idioma = $_POST['idioma'];
+$tema = $_POST['tema'];
 mysql_query("INSERT INTO bv_documento (id, documento_id, coleccion_id) VALUES ('','$_POST[codigo]','$_POST[coleccion]')");
-mysql_query("INSERT INTO bv_elementos_cont (id, documento_id, elemento_id, contenido) VALUES ('','$_POST[codigo]','1','$titulo')");
+mysql_query("INSERT INTO bv_elementos_cont (id, documento_id, elemento_id, contenido) VALUES ('','$_POST[codigo]','1','$titulootro')");
 $autores=array_map('trim', explode(',', $_POST['autor']));
     foreach($autores as $autor)
     {

@@ -35,8 +35,10 @@ p,h2,ul {
     background: #e1e1e1; }
 
 /* scss - estilo cuerpo*/
+* {
+    font-family: Ubuntu, open;
+}
 body {
-  font-family: Ubuntu, open;
   font-weight: 300;
   font-size: large; 
   margin: 0;
