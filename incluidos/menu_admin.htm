@@ -1,7 +1,7 @@
 <div class="menu">
 	<ul>
 		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
-		<li><?php echo $lang['MENU_COLECCIONES']; ?>
+		<li><?php echo $lang['MENU_CATEGORIAS']; ?>
 				<ul>
 				<?php
 					$result = mysql_query("SELECT * FROM bv_coleccion ORDER BY bv_coleccion.coleccion_id DESC ");
@@ -26,7 +26,7 @@
 				<?php } ?>
 				</ul>
 		</li>
-		<li><a href="?modulo=admin"><?php echo $lang['MENU_ADMIN']; ?></a></li>
+		<li><a href="?modulo=bibvir-admin"><?php echo $lang['MENU_ADMIN']; ?></a></li>
 		<li style="float:right"><a href="index.php?lang=en">Eng</a>
 				<a href="index.php?lang=es">Esp</a></li>
 	</ul>

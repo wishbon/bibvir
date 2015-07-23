@@ -1,7 +1,7 @@
 <div class="fichadoc">
 <table>
 	<tr>
-	<td rowspan="6" class="miniatura">
+	<td rowspan="7" class="miniatura">
 		<?php 
 		$iddoc=$_GET['id'];
 		$result = mysql_query("SELECT * FROM bv_archivos WHERE bv_archivos.archivo_formato='m' AND bv_archivos.archivo_id = '$iddoc'");
@@ -75,7 +75,18 @@
 			} ?>
 		</td>
 	</tr>
-	<tr>
+		<tr>
+	<td class="metadato"><?php echo $lang['IDIOMA']; ?></td>
+		<td>
+			<?php
+			$iddoc=$_GET['id'];
+			$result = mysql_query("SELECT elemento_id,contenido FROM bv_elementos_cont WHERE bv_elementos_cont.documento_id = '$iddoc' AND bv_elementos_cont.elemento_id=11");
+			while ($row = mysql_fetch_array($result)) {
+				echo $row['contenido'];
+			} ?>
+		</td>
+	</tr>
+		<tr>
 	<td class="metadato"><?php echo $lang['TEMAS']; ?></td>
 		<td>
 			<?php

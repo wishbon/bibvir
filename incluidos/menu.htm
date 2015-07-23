@@ -29,10 +29,10 @@
 		<li style="float:right">
 			<form action="index.rb?modulo=buscar" method="get">
 				<input type="hidden" name="modulo" value="buscar" /> 
-				<input type="search" name="terminos" placeholder="Ingrese parte del título...">
+				<input type="search" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
 			</form>
-		<a href="index.rb?lang=en">Eng</a>
-		<a href="index.rb?lang=es">Esp</a>
+		<a href="index.rb?lang=es"><?php echo $lang['ESPANOL']; ?></a>
+		<a href="index.rb?lang=en"><?php echo $lang['INGLES']; ?></a>
 		</li>
 	</ul>
 </div>
