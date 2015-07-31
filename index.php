@@ -1,6 +1,5 @@
 <?php
 error_reporting(E_ALL);
-require_once 'common.php';
 require_once 'conf.php';
 
 if (!empty($_GET['modulo']))
@@ -13,7 +12,6 @@ if (empty($conf[$modulo]))
 
 if (empty($conf[$modulo]['plantilla']))
 		$conf[$modulo]['plantilla'] = PLANTILLA_DEFECTO;
-
 
 $link = @mysql_connect($bd_host, $bd_usur, $bd_pass);
 if(!$link) {echo "Problemas con la base de datos, Asegurese de que la base de datos exista y los datos ingresados para la coneccion son correctos<br />Si necesita ayuda consulte la documentacion, aparatado Instalación"; exit;}

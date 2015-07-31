@@ -14,8 +14,8 @@ $lang['INGLES'] = 'Eng';
 // MENU
 $lang['MENU_INICIO'] = 'Home';
 $lang['MENU_TITULOS'] = 'Title';
-$lang['MENU_CATEGORIAS'] = 'Categories';
-$lang['MENU_ETIQUETAS'] = 'Tags';
+$lang['MENU_CATEGORIAS'] = 'Categories↡';
+$lang['MENU_ETIQUETAS'] = 'Tags↡';
 $lang['MENU_ADMIN'] = 'Admin';
 $lang['MENU_BUSCADOR'] = 'A few words of title...';
 

@@ -6,6 +6,14 @@
   font-style: normal;
   font-weight: 300;
   src: url("../fuente/OpenSans-Light.ttf"); }
+
+body::-webkit-scrollbar-track {background-color:rgb(27, 27, 27);}
+body::-webkit-scrollbar {width: 15px;}
+body::-webkit-scrollbar-thumb{background-color: #00AEFF;}
+
+ul::-webkit-scrollbar {width: 10px;}
+ul::-webkit-scrollbar-thumb{background-color: #00AEFF;}
+
 p,h2,ul {
   margin:0;
 }
@@ -57,6 +65,7 @@ div#contenedor {
   color: #555555;
   margin: auto auto; 
   background-color: rgb(27, 27, 27);
+  background-image: url('../imagenes/fondo.png');
 }
 
 /* scss - estilo header*/
@@ -87,7 +96,7 @@ div.menu li {
     padding: 0px 3px 0px 10px;
     text-decoration: none;
     text-shadow: #000 0 -1px 0px;
-    transition: all .5s; 
+    transition: all .2s; 
     /* font-size: 12px; */
 }
     div.menu li a:hover {
@@ -97,7 +106,7 @@ div.menu li {
       border-bottom-right-radius: 0px;
       border-top-right-radius: 10px;
       border-top-left-radius: 0px;
-      transition: all .5s; }
+      transition: all .2s; }
 
 div.contenido {
   padding: 70px 10px 0px 10px; 
@@ -210,14 +219,14 @@ div.admin a {
   line-height: 30px;
   margin-left: 0px;
   font-weight: 300;
-  transition: all .5s;
+  transition: all .2s;
   color: #d32536;
   text-decoration: none;
   background-repeat: no-repeat;
   background-size: 23px; }
   div.admin a:hover {
     margin-left: 10px;
-    transition: all .5s; }
+    transition: all .2s; }
   div.admin a.adocu {
     background-image: url("../imagenes/agregar-documento.png"); }
   div.admin a.edocu {
@@ -232,7 +241,10 @@ img.miniatura {
   height: 200px;
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(0, 0, 0);
+  background-image: url('../imagenes/load.gif');
+  background-repeat: no-repeat;
   transition:all .3s;
+  background-position: center;
 }
 img.miniatura:hover {
   box-shadow: 0px 0px 10px rgb(0, 137, 164);
@@ -271,10 +283,12 @@ ul.documentos {
 {
 visibility:hidden;
   opacity:0;
-  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
   position:absolute;
   top:100%;
   left:0;
+    height: 50vh;
+  overflow: auto;
   
 width: 215px;
 }
@@ -285,7 +299,7 @@ width: 215px;
   padding: 0px;
   height: 30px;
   line-height: 30px;
-  transition:all .5s
+  transition:all .2s
 }
 .menu ul ul li:hover {
   background-color:rgb(0, 174, 255);
@@ -309,7 +323,7 @@ width: 215px;
 {
    visibility:visible;
   opacity:1;
-  transition-delay:.2s;
+  transition-delay:.1s;
    background-color: rgba(36, 36, 36, 0.95);
 }
 
