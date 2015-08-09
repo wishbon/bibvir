@@ -7,13 +7,13 @@
 		$result = mysql_query("SELECT * FROM bv_archivos WHERE bv_archivos.archivo_formato='m' AND bv_archivos.archivo_id = '$iddoc'");
 		while ($row = mysql_fetch_array($result)) {
 		?>
-		<a href="./subidos/archivos/<?php 
+		<a href="http://srv2.cpanelhost.cl/~cl119365/subidos/<?php 
 				$resulta = mysql_query("SELECT * FROM bv_archivos WHERE bv_archivos.archivo_formato='a' AND bv_archivos.archivo_id = '$iddoc'");
 		while ($rowe = mysql_fetch_array($resulta)) {
 			echo $rowe['archivo_nombre'];
 		}
 		 ?>">
-		<img src="./subidos/miniaturas/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura">
+		<img src="http://srv2.cpanelhost.cl/~cl119365/subidos/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura">
 		<?php } ?>
 	</td>
 		<td class="metadato"><?php echo $lang['TITULO']; ?></td>

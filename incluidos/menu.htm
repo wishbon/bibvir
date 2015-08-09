@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu escritorio">
 	<ul>
 		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
 		<li><?php echo $lang['MENU_CATEGORIAS']; ?>
@@ -21,7 +21,7 @@
 						while ($row = mysql_fetch_array($result)) {
 				?>
 					<li>
-						<a href="?modulo=fichatag&tag=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+						<a href="?modulo=tema&tema=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
 					</li>
 				<?php } ?>
 				</ul>
@@ -29,10 +29,34 @@
 		<li style="float:right">
 			<form action="index.rb?modulo=buscar" method="get">
 				<input type="hidden" name="modulo" value="buscar" /> 
-				<input type="search" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
+				<input autofocus="autofocus" type="search" required="required" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
 			</form>
 		<a href="index.rb?lang=es"><?php echo $lang['ESPANOL']; ?></a>
 		<a href="index.rb?lang=en"><?php echo $lang['INGLES']; ?></a>
+		</li>
+	</ul>
+</div>
+
+<div class="menu movil">
+	<ul>
+		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
+		<li><?php echo $lang['MENU_ETIQUETAS']; ?>
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=15 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=tema&tema=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>
+			<form action="index.rb?modulo=buscar" method="get">
+				<input type="hidden" name="modulo" value="buscar" /> 
+				<input autofocus="autofocus" type="search" required="required" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
+			</form>
 		</li>
 	</ul>
 </div>

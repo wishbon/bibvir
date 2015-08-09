@@ -32,7 +32,7 @@ $lang['TEMAS'] = 'Etiquetas:';
 
 
 // FOOTER
-$lang['FOOTER'] = '2013 | Desarrollado con <a target="_blank" href="http://bibvir.infodi.cl">BibVir</a>';
+$lang['FOOTER'] = 'Información para uso estríctamente personal | Desarrollado con <a target="_blank" href="http://bibvir.infodi.cl">BibVir</a>';
 
 
 

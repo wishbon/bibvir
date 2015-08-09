@@ -1,7 +1,9 @@
 <?php 
+	include('incluidos/funciones.php'); 
 	include('incluidos/principio.htm'); 
+	include('incluidos/estadisticas.htm');  
 	include('incluidos/header.htm');
-	include('incluidos/menu_admin.htm');  
+	include('incluidos/menu.htm');  
 ?>
 <div class="contenido">
 	<?php
