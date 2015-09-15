@@ -1,7 +1,7 @@
 <div class="menu escritorio">
 	<ul>
 		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
-		<li><?php echo $lang['MENU_CATEGORIAS']; ?>
+		<!--<li><?php echo $lang['MENU_CATEGORIAS']; ?>
 				<ul>
 				<?php
 					$result = mysql_query("SELECT * FROM bv_coleccion ORDER BY bv_coleccion.nombre ASC ");
@@ -13,7 +13,7 @@
 				<?php } ?>
 				</ul>
 
-		</li>
+		</li>-->
 		<li><?php echo $lang['MENU_ETIQUETAS']; ?>
 				<ul>
 				<?php
@@ -31,8 +31,8 @@
 				<input type="hidden" name="modulo" value="buscar" /> 
 				<input autofocus="autofocus" type="search" required="required" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
 			</form>
-		<a href="index.rb?lang=es"><?php echo $lang['ESPANOL']; ?></a>
-		<a href="index.rb?lang=en"><?php echo $lang['INGLES']; ?></a>
+		<!--<a href="index.rb?lang=es"><?php echo $lang['ESPANOL']; ?></a>
+		<a href="index.rb?lang=en"><?php echo $lang['INGLES']; ?></a>-->
 		</li>
 	</ul>
 </div>

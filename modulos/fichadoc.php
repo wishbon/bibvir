@@ -13,7 +13,14 @@
 			echo $rowe['archivo_nombre'];
 		}
 		 ?>">
-		<img src="http://srv2.cpanelhost.cl/~cl119365/subidos/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura">
+		 
+		<img src="http://srv2.cpanelhost.cl/~cl119365/subidos/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura"></a><br /><br />
+		<!-- compartir en facebook -->
+		<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fl1br05p4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>%23.VcfaTL50jSc.facebook"><img src="incluidos/imagenes/facebook.png" title="Compartir esta joya en Facebook"></a>
+		<!--  compartir en twitter -->
+		<a href="https://twitter.com/intent/tweet?text=Este libro esta super bueno!+-+L1br05+p4r4+G33k5&url=http%3A%2F%2Fl1br05p4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>"><img src="incluidos/imagenes/twitter.png" title=""></a>
+		<!-- compartir en gmas -->
+		<a href="https://plus.google.com/share?url=http%3A%2F%2Fl1br05p4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>&t=Este+libro+esta+super+bueno!+-+L1br05+p4r4+G33k5"><img src="incluidos/imagenes/google.png" alt=""></a>
 		<?php } ?>
 	</td>
 		<td class="metadato"><?php echo $lang['TITULO']; ?></td>
