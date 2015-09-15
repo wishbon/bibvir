@@ -20,6 +20,7 @@ p,h2,ul {
 }
 /* scss - estilo cuerpo*/
 * {
+  cursor: pointer;
     font-family: 'basic';
     font-weight: 300;
     font-size: 22px; 
@@ -222,6 +223,7 @@ img.miniatura {
   box-shadow: 0 0 15px rgb(0, 0, 0);
   background-image: url('../imagenes/load.gif');
   background-repeat: no-repeat;
+  background-color: white;
   transition:all .3s;
   background-position: center;
 }
@@ -268,13 +270,13 @@ visibility:hidden;
   position:absolute;
   top:100%;
   left:0;
-    
-height: 75vh;
+height: 60vh;
   overflow: auto;
-  
 width: 235px;
 }
-
+.menu ul ul.fecha {
+  width: 75px;
+}
 .menu ul ul li
 {
   float:none;display: block;

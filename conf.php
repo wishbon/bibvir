@@ -129,6 +129,11 @@ $conf['autor'] = array(
 		'plantilla' => PLANTILLA ); 
 
 // FICHA DOCUMENTO
+$conf['fecha'] = array(
+		'archivo' => 'fecha.php',
+		'plantilla' => PLANTILLA ); 
+
+// FICHA DOCUMENTO
 $conf['tema'] = array(
 		'archivo' => 'tema.php',
 		'plantilla' => PLANTILLA ); 

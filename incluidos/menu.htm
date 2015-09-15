@@ -26,6 +26,42 @@
 				<?php } ?>
 				</ul>
 		</li>
+				<li><?php echo $lang['MENU_AUTORES']; ?>
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=2 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=autor&autor=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>Editorial↡
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=4 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=editorial&editorial=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>Fecha↡
+				<ul class="fecha">
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=6 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=fecha&fecha=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
 		<li style="float:right">
 			<form action="index.rb?modulo=buscar" method="get">
 				<input type="hidden" name="modulo" value="buscar" /> 

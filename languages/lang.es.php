@@ -17,6 +17,7 @@ $lang['MENU_INICIO'] = 'Inicio';
 $lang['MENU_TITULOS'] = 'Títulos';
 $lang['MENU_CATEGORIAS'] = 'Categorías↡';
 $lang['MENU_ETIQUETAS'] = 'Etiquetas↡';
+$lang['MENU_AUTORES'] = 'Autores↡';
 $lang['MENU_ADMIN'] = 'Admin';
 $lang['MENU_BUSCADOR'] = 'Ingrese parte del título...';
 
@@ -32,7 +33,7 @@ $lang['TEMAS'] = 'Etiquetas:';
 
 
 // FOOTER
-$lang['FOOTER'] = 'Información para uso estríctamente personal | Desarrollado con <a target="_blank" href="http://bibvir.infodi.cl">BibVir</a>';
+$lang['FOOTER'] = 'Información para uso estríctamente personal';
 
 
 
