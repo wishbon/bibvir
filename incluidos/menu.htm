@@ -76,7 +76,7 @@
 <div class="menu movil">
 	<ul>
 		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
-		<li><?php echo $lang['MENU_ETIQUETAS']; ?>
+		<!--<li><?php echo $lang['MENU_ETIQUETAS']; ?>
 				<ul>
 				<?php
 					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=15 ORDER BY contenido ASC");
@@ -87,7 +87,7 @@
 					</li>
 				<?php } ?>
 				</ul>
-		</li>
+		</li>-->
 		<li>
 			<form action="index.rb?modulo=buscar" method="get">
 				<input type="hidden" name="modulo" value="buscar" /> 

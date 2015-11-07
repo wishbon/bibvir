@@ -22,6 +22,8 @@
 		<a href="#"  onclick="window.open('https://twitter.com/intent/tweet?text=Este libro esta super bueno!+-+L1br05+p4r4+G33k5&url=http%3A%2F%2Fl1br05p4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>','name','height=255,width=470,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');return false;"><img src="incluidos/imagenes/twitter.png" title="Compartir esta joya en Twitter"></a>
 		<!-- compartir en gmas -->
 		<a href="#" onclick="window.open('https://plus.google.com/share?url=http%3A%2F%2Fl1br05p4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>&t=Este+libro+esta+super+bueno!+-+L1br05+p4r4+G33k5','name','height=455,width=490,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');return false;"><img src="incluidos/imagenes/google.png" title="Compartir esta joya en G+"></a>
+		<!-- compartir en gmas -->
+		<a href="#" onclick="window.open('https://plus.google.com/share?url=http%3A%2F%2Fl1br05p4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>&t=Este+libro+esta+super+bueno!+-+L1br05+p4r4+G33k5','name','height=455,width=490,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');return false;"><img src="incluidos/imagenes/corazon.png" width="27" title="Compartir esta joya en G+"></a>
 		<?php } ?>
 	</td>
 		<td class="metadato"><?php echo $lang['TITULO']; ?></td>

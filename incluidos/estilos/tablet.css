@@ -88,19 +88,21 @@ div.menu li {
 
 div.contenido {
   padding: 70px 10px 0px 10px; 
+  text-align: center;
 }
 
 div.footer {
-  display: none;
   background-color: #262626;
   font-size: small;
   text-align: center;
   color: white; 
   position: fixed;
   bottom: 0;
+  width: 100%;
 }
   div.footer p {
-    padding: 10px; }
+    padding: 10px; 
+}
     div.footer p span {
       font-weight: 900; }
 
@@ -157,8 +159,8 @@ ul.idioma {
   list-style: none;
 }
 table {
-  /* width: 100%; */
-  display: inline-table;
+  width: 100%;
+    display: inline-table;
 }
   table.ficha {
     margin: 0px 0px 20px 0px;
@@ -217,8 +219,9 @@ div.admin a {
     background-image: url("../imagenes/editar-borrar.png"); }
 
 img.miniatura {
-  width: 90%;
+  width: 100%;
   height: 234px;
+  border: 0px;
   box-shadow: 0 0 15px rgb(0, 0, 0);
   background-repeat: no-repeat;
   transition:all .3s;
@@ -237,8 +240,8 @@ ul.documentos li {
 
 ul.documentos {
     display: inline-table;
-    width: 46%;
-    padding: 4px;
+    width: 29%;
+    padding: 10px;
 }
 .menu ul
 {
@@ -253,6 +256,7 @@ ul.documentos {
 .menu ul li
 {
   position:relative;
+  float:left;
   margin:0;
   padding:0
 ;
@@ -315,7 +319,7 @@ input[type="search"] {
   background: rgb(27, 27, 27);
   border: 1px solid rgb(65, 65, 65);
   height: 26px;
-  width: 63%;
+  width: 280px;
   padding: 0px 10px;
   color: white;
   transition: all .2s;
@@ -327,18 +331,14 @@ input:focus {
 
 /*FICHA DOCUMENTOS*/
 div.fichadoc {
-  /* width: 1000px; */
+  width: 1000px;
   margin: 0 auto;
 }
 div.fichadoc table {
     border-spacing: 0px;
     border-collapse: separate;
+}
 
-}
-table, thead, tbody, th, td, tr {
-    display: block;
-}
-    
 div.fichadoc td {
   vertical-align: top;
   padding: 10px 0 10px 0;
@@ -347,12 +347,10 @@ div.fichadoc td {
   color: white;
   font-weight: 300;
   padding-right: 10px;
-  word-wrap: break-word;
 }
 div.fichadoc td.miniatura {
   border-bottom: 0px;
   border-top: 0px;
-  text-align: center;
 }
 div.fichadoc tr:first-child td {
   border-top:0px;
@@ -363,10 +361,12 @@ div.fichadoc tr:last-child td {
 div.fichadoc img.miniatura {
   width:250px;
   height: 355px;
+  margin: 0 20px 0 0;
 }
 td.metadato {
   font-weight: 900 !important;
   color: rgb(148, 148, 148) !important;
+  text-align: right;
 }
 .separador:last-child {
   display:none;

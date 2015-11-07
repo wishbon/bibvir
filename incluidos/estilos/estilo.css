@@ -2,5 +2,5 @@
 Desarrollado por InfoDi - www.infodi.cl 
 **************************************/
 @import url('movil.css') only screen and (min-width:50px) and (max-width: 700px);
-@import url('movil.css') only screen and (min-width:701px) and (max-width: 1024px);
+@import url('tablet.css') only screen and (min-width:701px) and (max-width: 1024px);
 @import url('escritorio.css') only screen and (min-width: 1025px);
