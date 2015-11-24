@@ -20,7 +20,6 @@ p,h2,ul {
 }
 /* scss - estilo cuerpo*/
 * {
-  cursor: pointer;
     font-family: 'basic';
     font-weight: 300;
     font-size: 22px; 

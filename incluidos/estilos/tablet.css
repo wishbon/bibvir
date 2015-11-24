@@ -331,8 +331,9 @@ input:focus {
 
 /*FICHA DOCUMENTOS*/
 div.fichadoc {
-  width: 1000px;
+  /* width: 1000px; */
   margin: 0 auto;
+  text-align: left;
 }
 div.fichadoc table {
     border-spacing: 0px;
