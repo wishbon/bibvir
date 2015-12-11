@@ -24,12 +24,12 @@ return $llave;
 			<td>Colección</td>
 			<td><select name="coleccion" >
 					<?php
-					    $result = mysql_query("SELECT * FROM bv_coleccion ORDER BY nombre ASC");    
+					    $result = mysql_query("SELECT * FROM bv_coleccion ORDER BY nombre ASC");
 						while($row = mysql_fetch_assoc($result))
-						{ 
-					?> 
+						{
+					?>
 					<option value="<?php echo $row['coleccion_id'] ?>"><?php echo $row['nombre'] ?></option>
-					<?php } ?>		
+					<?php } ?>
 				</select></td>
 		</tr>
 		<tr>
@@ -73,12 +73,3 @@ return $llave;
 
 
 </form>
-
-
-
-
-
-
-
-
-

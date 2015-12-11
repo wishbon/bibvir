@@ -87,7 +87,10 @@ div.menu li {
       transition: all .2s; }
 
 div.contenido {
-  padding: 70px 10px 0px 10px; 
+  padding: 70px 10px 0px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 div.footer {
@@ -232,12 +235,10 @@ img.miniatura:hover {
 }
 
 ul.documentos li {
-    display: inline-table;
     padding: 20px 0;
 }
 
 ul.documentos {
-    display: inline-table;
     padding: 5px 25px;
 }
 .menu ul
