@@ -16,11 +16,11 @@ $bd_prefix = 'bv_';
 //IDIOMA CONFIGURACIONES
 
 session_start();
-header('Cache-control: private'); // IE 6 FIX
+header('Cache-control: private'); 
 if(isSet($_GET['lang']))
 {
 $lang = $_GET['lang'];
-// register the session and set the cookie
+
 $_SESSION['lang'] = $lang;
 setcookie("lang", $lang, time() + (3600 * 24 * 30));
 }
