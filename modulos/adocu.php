@@ -6,7 +6,7 @@ if (isset($_GET['error'])){
 <?php
 function generarCodigo($longitud) {
 	$llave = '';
-	$incluidos = '1234567890abcdfghjklmnpqrstvwxyz';
+	$incluidos = '1234567890abcdefghijklmnopqrstuvwxyz';
 	$max = strlen($incluidos)-1;
 	for($i=0;$i < $longitud;$i++) $llave .= $incluidos{mt_rand(0,$max)};
 		return $llave;
