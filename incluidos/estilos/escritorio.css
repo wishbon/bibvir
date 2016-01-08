@@ -22,6 +22,7 @@ p,h2,ul {
 * {
     font-family: 'basic';
     font-weight: 300;
+    outline: none;
     font-size: 22px; 
     letter-spacing: 1px;
 }
@@ -314,16 +315,54 @@ width: 235px;
 form {
   display: initial;
 }
-input[type="search"] {
+input[type="search"], input[type="text"], textarea, select {
   background: rgb(27, 27, 27);
   border: 1px solid rgb(65, 65, 65);
   height: 26px;
   width: 280px;
   padding: 0px 10px;
+  outline: none;
   color: white;
   transition: all .2s;
 }
-input:focus {
+::-webkit-file-upload-button {
+  visibility: hidden;
+  width: 80px;
+}
+input[type="file"] {
+  display: inline-block;
+  background: rgb(27, 27, 27);
+  border: 1px solid rgb(65, 65, 65);
+  padding: 0px 10px;
+  outline: none;
+  color:grey;
+  height: 26px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+input[type="submit"] {
+  border:0px;
+  background-color:#00AEFF;
+  color:white;
+  text-shadow: 1px 1px 10px#000000;
+  padding: 5px 20px;
+  border-bottom: 4px solid #004D72;
+}
+input.documento::before {
+  content: 'Escoger';
+  color:white;
+}
+input.portada::before {
+  content: 'Escoger';
+  color:white;
+}
+
+
+textarea {
+  height: 100px;
+}
+input:focus, textarea:focus {
   box-shadow: 0px 0px 10px rgb(0, 174, 255);
   border: 1px solid rgb(27, 27, 27) !important;
 }
@@ -369,4 +408,23 @@ td.metadato {
 }
 .separador:last-child {
   display:none;
+}
+
+.cargadoc {
+    margin: auto;
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.72);
+    box-sizing: border-box;
+    padding: 26px;
+    background-color: rgba(22, 22, 22, 0.76);
+    width: 465px;
+}
+.cargadoc h2 {
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding:10px 0 20px 0;
+  color: white;
+}
+.cargadoc td {
+  padding:5px 0;
+  vertical-align: middle;
 }

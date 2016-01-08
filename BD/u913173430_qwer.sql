@@ -4,8 +4,8 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 15-09-2015 a las 18:01:24
--- Versión del servidor: 10.0.20-MariaDB
+-- Tiempo de generación: 08-01-2016 a las 13:16:53
+-- Versión del servidor: 10.0.22-MariaDB
 -- Versión de PHP: 5.2.17
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `u913173430_qwer`
+-- Base de datos: `u539685249_para`
 --
 
 -- --------------------------------------------------------
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `bv_archivos` (
   `archivo_peso` varchar(100) NOT NULL,
   `archivo_formato` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=165 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=179 ;
 
 --
 -- Volcado de datos para la tabla `bv_archivos`
@@ -182,7 +182,21 @@ INSERT INTO `bv_archivos` (`id`, `archivo_id`, `archivo_nombre`, `archivo_peso`,
 (161, 'tbgcnv4cng', 'tuw.zip', '0', 'a'),
 (162, 'tbgcnv4cng', 'tuw.png', '0', 'm'),
 (163, '9x0tl3th4d', 'taogd.zip', '0', 'a'),
-(164, '9x0tl3th4d', 'taogd.png', '0', 'm');
+(164, '9x0tl3th4d', 'taogd.png', '0', 'm'),
+(165, '05yn7026zm', 'pg.zip', '0', 'a'),
+(166, '05yn7026zm', 'pg.png', '0', 'm'),
+(167, 'qd6gx1q873', 'bswa.zip', '0', 'a'),
+(168, 'qd6gx1q873', 'bswa.png', '0', 'm'),
+(169, 'xq0g9mmszm', 'btrue.zip', '0', 'a'),
+(170, 'xq0g9mmszm', 'btrue.png', '0', 'm'),
+(171, '317ms3g8v0', 'ltvave.zip', '0', 'a'),
+(172, '317ms3g8v0', 'ltvave.png', '0', 'm'),
+(173, 'q4gwy66ybm', 'chawfaw.zip', '0', 'a'),
+(174, 'q4gwy66ybm', 'chawfaw.png', '0', 'm'),
+(175, 'hw98ybztrb', 'cwm.zip', '0', 'a'),
+(176, 'hw98ybztrb', 'cwm.png', '0', 'm'),
+(177, 'ymcs5v8h39', 'uer.zip', '0', 'a'),
+(178, 'ymcs5v8h39', 'uer.png', '0', 'm');
 
 -- --------------------------------------------------------
 
@@ -220,7 +234,7 @@ CREATE TABLE IF NOT EXISTS `bv_documento` (
   `documento_id` varchar(10) NOT NULL,
   `coleccion_id` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=90 ;
 
 --
 -- Volcado de datos para la tabla `bv_documento`
@@ -297,7 +311,14 @@ INSERT INTO `bv_documento` (`id`, `documento_id`, `coleccion_id`) VALUES
 (79, 'xsgvtt1rf4', 4),
 (80, 'lzl5f2sk9b', 3),
 (81, 'tbgcnv4cng', 4),
-(82, '9x0tl3th4d', 3);
+(82, '9x0tl3th4d', 3),
+(83, '05yn7026zm', 4),
+(84, 'qd6gx1q873', 4),
+(85, 'xq0g9mmszm', 3),
+(86, '317ms3g8v0', 5),
+(87, 'q4gwy66ybm', 4),
+(88, 'hw98ybztrb', 4),
+(89, 'ymcs5v8h39', 3);
 
 -- --------------------------------------------------------
 
@@ -344,7 +365,7 @@ CREATE TABLE IF NOT EXISTS `bv_elementos_cont` (
   `elemento_id` int(250) NOT NULL,
   `contenido` varchar(5000) CHARACTER SET latin1 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=757 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=820 ;
 
 --
 -- Volcado de datos para la tabla `bv_elementos_cont`
@@ -486,8 +507,8 @@ INSERT INTO `bv_elementos_cont` (`id`, `documento_id`, `elemento_id`, `contenido
 (202, '6nghrfjlcg', 11, 'Inglés'),
 (203, '6nghrfjlcg', 15, 'Responsivo'),
 (204, '6nghrfjlcg', 15, 'Diseño Web'),
-(213, 'rn89chq0vy', 2, 'Alan Cooper'),
 (212, 'rn89chq0vy', 1, 'About Face 3: The Essentials of Interaction Design'),
+(213, 'rn89chq0vy', 2, 'Alan Cooper'),
 (214, 'rn89chq0vy', 2, 'Robert Reimann'),
 (215, 'rn89chq0vy', 2, 'Dave Cronin'),
 (216, 'rn89chq0vy', 3, 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'),
@@ -801,9 +822,6 @@ INSERT INTO `bv_elementos_cont` (`id`, `documento_id`, `elemento_id`, `contenido
 (523, 's03ysdlr24', 2, 'Ewan Klein'),
 (524, 's03ysdlr24', 2, 'Edward Loper'),
 (525, 's03ysdlr24', 3, 'Este libro ofrece una introducción muy accesible para el procesamiento del lenguaje natural, el campo que soporta una variedad de tecnologías de la lengua, de texto predictivo y filtrado de correo electrónico y el resumen automático y la traducción. Con él, aprenderá cómo escribir programas en Python que trabajan con grandes colecciones de texto no estructurado. Vas a acceder a bases de datos ricamente anotado utilizando una amplia gama de estructuras de datos lingüísticos, y vas a entender los principales algoritmos para analizar el contenido y la estructura de la comunicación escrita.'),
-(683, '5dgs7xtddn', 1, 'Interviewing Users: How To Uncover Compelling Insights'),
-(684, '5dgs7xtddn', 2, 'Steve Portigal'),
-(685, '5dgs7xtddn', 3, 'Interviewing Users es una herramienta de investigación de usuario que la mayoría cree tener. Todo el mundo puede hacer preguntas, ¿verdad? Por desgracia, ese no es el caso. El libro proporciona técnicas de entrevista invaluables y herramientas que le permiten llevar a cabo entrevistas informativas con cualquier tipo de usuario.'),
 (526, 's03ysdlr24', 4, 'O`Reilly'),
 (527, 's03ysdlr24', 6, '2009'),
 (528, 's03ysdlr24', 11, 'Inglés'),
@@ -961,6 +979,9 @@ INSERT INTO `bv_elementos_cont` (`id`, `documento_id`, `elemento_id`, `contenido
 (680, 'qlmllnfzl7', 11, 'Español'),
 (681, 'qlmllnfzl7', 15, 'Simplicidad'),
 (682, 'qlmllnfzl7', 15, 'Usabilidad'),
+(683, '5dgs7xtddn', 1, 'Interviewing Users: How To Uncover Compelling Insights'),
+(684, '5dgs7xtddn', 2, 'Steve Portigal'),
+(685, '5dgs7xtddn', 3, 'Interviewing Users es una herramienta de investigación de usuario que la mayoría cree tener. Todo el mundo puede hacer preguntas, ¿verdad? Por desgracia, ese no es el caso. El libro proporciona técnicas de entrevista invaluables y herramientas que le permiten llevar a cabo entrevistas informativas con cualquier tipo de usuario.'),
 (686, '5dgs7xtddn', 4, 'Rosenfeld Media'),
 (687, '5dgs7xtddn', 6, '2013'),
 (688, '5dgs7xtddn', 11, 'Inglés'),
@@ -1031,7 +1052,70 @@ INSERT INTO `bv_elementos_cont` (`id`, `documento_id`, `elemento_id`, `contenido
 (753, '9x0tl3th4d', 6, '2008'),
 (754, '9x0tl3th4d', 11, 'Inglés'),
 (755, '9x0tl3th4d', 15, 'VideoJuegos'),
-(756, '9x0tl3th4d', 15, 'Diseño');
+(756, '9x0tl3th4d', 15, 'Diseño'),
+(757, '05yn7026zm', 1, 'Pro Git'),
+(758, '05yn7026zm', 2, 'Scott Chacon'),
+(759, '05yn7026zm', 2, 'Ben Straub'),
+(760, '05yn7026zm', 3, 'Pro Git (Segunda Edición) es la guí­a de uso de Git en el mundo moderno. Git ha recorrido un largo camino desde que fue desarrollado por Linus Torvalds para el desarrollo del kernel de Linux. Se ha tomado el mundo del código abierto desde su creación en 2005, y este libro enseña cómo utilizar como un profesional. El libro es gratuito y puede ser descargado desde su sitio web oficial <a href="https://progit.org/">aquÃ­</a>'),
+(761, '05yn7026zm', 4, 'Apress'),
+(762, '05yn7026zm', 6, '2014'),
+(763, '05yn7026zm', 11, 'Inglés'),
+(764, '05yn7026zm', 15, 'Control de Versiones'),
+(765, '05yn7026zm', 15, 'GIT'),
+(766, '05yn7026zm', 15, 'Gestión de proyectos'),
+(767, 'qd6gx1q873', 1, 'Building Social Web Applications'),
+(768, 'qd6gx1q873', 2, 'Gavin Bell'),
+(769, 'qd6gx1q873', 3, 'La construcción de una aplicación web que atraiga y retenga a los visitantes regulares es bastante complicado, pero la creación de una aplicación social que anima a los visitantes a interactuar entre si­ requiere una planificación cuidadosa. Este libro ofrece soluciones prácticas a las preguntas difíciles que se enfrentará en la construcción de un sitio de la comunidad efectiva - una que hace que los visitantes se sientan como si han encontrado un nuevo hogar en la Web.'),
+(770, 'qd6gx1q873', 4, 'O`Reilly'),
+(771, 'qd6gx1q873', 6, '2009'),
+(772, 'qd6gx1q873', 11, 'Inglés'),
+(773, 'qd6gx1q873', 15, 'Social'),
+(774, 'qd6gx1q873', 15, 'Desarrollo Web'),
+(775, 'qd6gx1q873', 15, 'Aplicaciones'),
+(776, 'xq0g9mmszm', 1, 'Building the Realtime User Experience'),
+(777, 'xq0g9mmszm', 2, 'Ted Roden'),
+(778, 'xq0g9mmszm', 3, 'La Web está ocurriendo cada vez más en tiempo real. Con sitios como Facebook y Twitter a la cabeza, los usuarios están llegando a esperar que todos los sitios deben servir contenido a medida que se produce, en los teléfonos inteligentes, así­ como computadoras. Este libro muestra cómo crear experiencias de usuario en tiempo real mediante la adición de chat, la transmisión de contenido, y que incluye más caracterí­sticas en su sitio de una pieza a la vez, sin hacer grandes cambios en la infraestructura existente. Usted también aprenderá cómo servir contenidos en tiempo real más allá del navegador.'),
+(779, 'xq0g9mmszm', 4, 'O`Reilly'),
+(780, 'xq0g9mmszm', 6, '2010'),
+(781, 'xq0g9mmszm', 11, 'Inglés'),
+(782, 'xq0g9mmszm', 15, 'Experiencia de Usuario'),
+(783, '317ms3g8v0', 1, 'Learning the vi and Vim Editors'),
+(784, '317ms3g8v0', 2, 'Arnold Robbins'),
+(785, '317ms3g8v0', 2, 'Elbert Hannah'),
+(786, '317ms3g8v0', 2, 'Linda Lamb'),
+(787, '317ms3g8v0', 3, 'No hay algo por lo que los usuarios de Linux sean más fanáticos que su editor de textos. Los editores son objeto de adoración y culto, o de desprecio y burla, dependiendo de si el tema de discusión es su editor o de alguien más. Vi ha sido el editor estándar por cerca de 30 años. Popular en Unix y Linux, tiene una versión en los sistemas Windows, también. La mayoría de los administradores de sistemas con experiencia citan vi como su herramienta de elección. Desde 1986, este libro ha sido la guía para vi. Sin embargo, los sistemas Unix no son lo que eran hace 30 años, y tampoco lo es este libro. Al tiempo que mantiene todas las características valiosas de las ediciones anteriores, la séptima edición de Aprendizaje de los editores vi y vim se ha ampliado para incluir información detallada sobre vim, el principal clon de vi. '),
+(788, '317ms3g8v0', 4, 'O`Reilly'),
+(789, '317ms3g8v0', 6, '2008'),
+(790, '317ms3g8v0', 11, 'Inglés'),
+(791, '317ms3g8v0', 15, 'Editores de texto'),
+(792, '317ms3g8v0', 15, 'Linux'),
+(793, 'q4gwy66ybm', 1, 'Creating HTML5 Animations with Flash and Wallaby'),
+(794, 'q4gwy66ybm', 2, 'Ian McLean'),
+(795, 'q4gwy66ybm', 3, 'La creación compatible con los estándares de animación para la Web es ahora mucho más fácil. Con esta guía concisa, usted aprenderá cómo convertir animaciones Flash en HTML5, utilizando Wallaby -la herramienta experimental de Adobe-. Wallaby hace contenido Flash disponible para dispositivos que no soportan tiempos de ejecución de Flash, incluyendo el iPhone y el iPad.'),
+(796, 'q4gwy66ybm', 4, 'O`Reilly'),
+(797, 'q4gwy66ybm', 6, '2011'),
+(798, 'q4gwy66ybm', 11, 'Inglés'),
+(799, 'q4gwy66ybm', 15, 'HTML'),
+(800, 'q4gwy66ybm', 15, 'Desarrollo Web'),
+(801, 'q4gwy66ybm', 15, 'Animaciones'),
+(802, 'q4gwy66ybm', 15, 'Flash'),
+(803, 'hw98ybztrb', 1, 'Complete Web Monitoring: Watching your visitors, performance, communities, and competitors: Essential Knowledge for Web Analysts and Operators'),
+(804, 'hw98ybztrb', 2, 'Alistair Croll'),
+(805, 'hw98ybztrb', 2, 'Sean Power'),
+(806, 'hw98ybztrb', 3, '¿Realmente entiende su presencia en lí­nea?, ¿Está seguro de que los visitantes pueden utilizar su sitio web?, ¿Conoce sus motivaciones?, ¿Cómo perciben las comunidades en lí­nea su empresa? Para innovar y adaptar su negocio rápidamente, debe conocer las respuestas a estas preguntas. Complete Web Monitoring demuestra cómo medir cada aspecto de su presencia en la web - incluyendo análisis, el rendimiento de back-end, usabilidad, comunidades, comentarios de los clientes, y análisis de la competencia.'),
+(807, 'hw98ybztrb', 4, 'O`Reilly'),
+(808, 'hw98ybztrb', 6, '2009'),
+(809, 'hw98ybztrb', 11, 'Inglés'),
+(810, 'hw98ybztrb', 15, 'Contenido Web'),
+(811, 'hw98ybztrb', 15, 'Monitoreo Web'),
+(812, 'ymcs5v8h39', 1, 'User Experience Re-Mastered: Your Guide to Getting the Right Design'),
+(813, 'ymcs5v8h39', 2, 'Chauncey Wilson'),
+(814, 'ymcs5v8h39', 3, 'El libro proporciona una comprensión de los procesos de diseño y desarrollo claves destinadas a mejorar la experiencia del usuario de los sitios web y aplicaciones web. '),
+(815, 'ymcs5v8h39', 4, 'Morgan Kaufmann'),
+(816, 'ymcs5v8h39', 6, '2010'),
+(817, 'ymcs5v8h39', 11, 'Inglés'),
+(818, 'ymcs5v8h39', 15, 'Usabilidad'),
+(819, 'ymcs5v8h39', 15, 'Experiencia de Usuario');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
