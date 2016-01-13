@@ -4,7 +4,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 08-01-2016 a las 13:16:53
+-- Tiempo de generación: 13-01-2016 a las 13:54:27
 -- Versión del servidor: 10.0.22-MariaDB
 -- Versión de PHP: 5.2.17
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `bv_archivos` (
   `archivo_peso` varchar(100) NOT NULL,
   `archivo_formato` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=179 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=195 ;
 
 --
 -- Volcado de datos para la tabla `bv_archivos`
@@ -196,7 +196,23 @@ INSERT INTO `bv_archivos` (`id`, `archivo_id`, `archivo_nombre`, `archivo_peso`,
 (175, 'hw98ybztrb', 'cwm.zip', '0', 'a'),
 (176, 'hw98ybztrb', 'cwm.png', '0', 'm'),
 (177, 'ymcs5v8h39', 'uer.zip', '0', 'a'),
-(178, 'ymcs5v8h39', 'uer.png', '0', 'm');
+(178, 'ymcs5v8h39', 'uer.png', '0', 'm'),
+(179, 'v5zp16xqps', 'hgdftguwc.zip', '0', 'a'),
+(180, 'v5zp16xqps', 'hgdftguwc.png', '0', 'm'),
+(181, '6b0snvnv9b', 'iaftwab.zip', '0', 'a'),
+(182, '6b0snvnv9b', 'iaftwab.png', '0', 'm'),
+(183, 'nmhqpx5z2c', 'ditptfodmbs.zip', '0', 'a'),
+(184, 'nmhqpx5z2c', 'ditptfodmbs.png', '0', 'm'),
+(185, 'zk1m0ygknl', 'hwd.zip', '0', 'a'),
+(186, 'zk1m0ygknl', 'hwd.png', '0', 'm'),
+(187, 'm161j9gb52', 'byow.zip', '0', 'a'),
+(188, 'm161j9gb52', 'byow.png', '0', 'm'),
+(189, 'dy0t4y8n61', 'sdfiti.zip', '0', 'a'),
+(190, 'dy0t4y8n61', 'sdfiti.png', '0', 'm'),
+(191, 'asryhn379c', 'aud.zip', '0', 'a'),
+(192, 'asryhn379c', 'aud.png', '0', 'm'),
+(193, 'uve0uiqe9s', 'phabaiw.zip', '0', 'a'),
+(194, 'uve0uiqe9s', 'phabaiw.png', '0', 'm');
 
 -- --------------------------------------------------------
 
@@ -234,7 +250,7 @@ CREATE TABLE IF NOT EXISTS `bv_documento` (
   `documento_id` varchar(10) NOT NULL,
   `coleccion_id` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=90 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=98 ;
 
 --
 -- Volcado de datos para la tabla `bv_documento`
@@ -318,7 +334,15 @@ INSERT INTO `bv_documento` (`id`, `documento_id`, `coleccion_id`) VALUES
 (86, '317ms3g8v0', 5),
 (87, 'q4gwy66ybm', 4),
 (88, 'hw98ybztrb', 4),
-(89, 'ymcs5v8h39', 3);
+(89, 'ymcs5v8h39', 3),
+(90, 'v5zp16xqps', 3),
+(91, '6b0snvnv9b', 3),
+(92, 'nmhqpx5z2c', 3),
+(93, 'zk1m0ygknl', 4),
+(94, 'm161j9gb52', 4),
+(95, 'dy0t4y8n61', 3),
+(96, 'asryhn379c', 5),
+(97, 'uve0uiqe9s', 4);
 
 -- --------------------------------------------------------
 
@@ -365,7 +389,7 @@ CREATE TABLE IF NOT EXISTS `bv_elementos_cont` (
   `elemento_id` int(250) NOT NULL,
   `contenido` varchar(5000) CHARACTER SET latin1 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=820 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=895 ;
 
 --
 -- Volcado de datos para la tabla `bv_elementos_cont`
@@ -1115,7 +1139,82 @@ INSERT INTO `bv_elementos_cont` (`id`, `documento_id`, `elemento_id`, `contenido
 (816, 'ymcs5v8h39', 6, '2010'),
 (817, 'ymcs5v8h39', 11, 'Inglés'),
 (818, 'ymcs5v8h39', 15, 'Usabilidad'),
-(819, 'ymcs5v8h39', 15, 'Experiencia de Usuario');
+(819, 'ymcs5v8h39', 15, 'Experiencia de Usuario'),
+(820, 'v5zp16xqps', 1, 'HTML5 GaMe DeveLopMenT from the Ground Up with ConsTruCT 2'),
+(821, 'v5zp16xqps', 2, 'Roberto Dillon'),
+(822, 'v5zp16xqps', 3, 'Escrito para la nueva generación de aficionados y desarrolladores de juegos, el libro muestra cómo utilizar el motor de juego sofisticado pero fácil de usar basado en HTML5 Construct 2 para desarrollar y lanzar juegos pulidos, de dos dimensiones en una multitud de diferentes plataformas. El libro también cubre el conocimiento fundamental de análisis y diseño de juego basado en investigación y docencia, son las experiencias del autor en DigiPen Institute of Technology, la Universidad James Cook, y otras instituciones.'),
+(823, 'v5zp16xqps', 4, 'CRC Press'),
+(824, 'v5zp16xqps', 6, '2014'),
+(825, 'v5zp16xqps', 11, 'Inglés'),
+(826, 'v5zp16xqps', 15, 'Diseño'),
+(827, 'v5zp16xqps', 15, 'VideoJuegos'),
+(828, 'v5zp16xqps', 15, 'HTML'),
+(829, '6b0snvnv9b', 1, 'Information Architecture For the Web and Beyond'),
+(830, '6b0snvnv9b', 2, 'Louis Rosenfeld'),
+(831, '6b0snvnv9b', 2, 'Peter Morville'),
+(832, '6b0snvnv9b', 2, 'Jorge Arango'),
+(833, '6b0snvnv9b', 3, 'La Arquitectura de la Información (AI) es mucho más difícil y necesaria que nunca. Con el exceso de información disponible en la actualidad, cualquier cosa que su organización quiere compartir debe ser fácil de encontrar, navegar y entender. Pero la experiencia que usted proporcione tiene que ser familiar y coherente a través de múltiples canales de interacción, desde la Web a los teléfonos inteligentes, smartwatches, y más allá.\r\n\r\nPara guiarle a través de este amplio ecosistema, esta guía, ahora popular en su cuarta edición, proporciona conceptos esenciales, métodos y técnicas para el diseño digital que han resistido la prueba del tiempo. \r\n\r\nDiseñadores UX, gerentes de producto, desarrolladores y cualquier persona involucrada en el diseño digital aprenderán cómo crear estructuras semánticas que ayudarán a la gente se involucra con su mensaje.'),
+(834, '6b0snvnv9b', 4, 'O`Reilly'),
+(835, '6b0snvnv9b', 6, '2015'),
+(836, '6b0snvnv9b', 11, 'Inglés'),
+(837, '6b0snvnv9b', 15, 'Experiencia de Usuario'),
+(838, '6b0snvnv9b', 15, 'Arquitectura de Información'),
+(839, '6b0snvnv9b', 15, 'Diseño Web'),
+(840, 'nmhqpx5z2c', 1, 'Design Is the Problem: The Future of Design Must be Sustainable'),
+(841, 'nmhqpx5z2c', 2, 'Nathan Shedroff'),
+(842, 'nmhqpx5z2c', 3, 'El diseño del producto puede tener un tremendo impacto en el mundo en términos de facilidad de uso, residuos y recursos. En este libro, Nathan Shedroff examina cómo la cultura endémica de diseño a menudo crea soluciones sostenibles, y muestra la forma de garantizar que los procesos de diseño conducen a los productos y servicios más sostenibles.'),
+(843, 'nmhqpx5z2c', 4, 'Rosenfeld Media'),
+(844, 'nmhqpx5z2c', 6, '2009'),
+(845, 'nmhqpx5z2c', 11, 'Inglés'),
+(846, 'nmhqpx5z2c', 15, 'Diseño'),
+(847, 'nmhqpx5z2c', 15, 'Diseño de Productos'),
+(848, 'zk1m0ygknl', 1, 'Hardboiled Web Design'),
+(849, 'zk1m0ygknl', 2, 'Andy Clarke'),
+(850, 'zk1m0ygknl', 3, 'Hardboiled Web Design es diferente. Es para la gente que quiere entender por qué, cuándo y cómo utilizar HTML5 y CSS3. No te va a enseñar los fundamentos de estos lenguajes, pero si tienes deseos de aprender sobre cómo estas últimas tecnologías harán que sus sitios web y aplicaciones sean más creativas, flexibles y adaptables, entonces este es el libro para usted.'),
+(851, 'zk1m0ygknl', 4, 'Five Simple Steps'),
+(852, 'zk1m0ygknl', 6, '2010'),
+(853, 'zk1m0ygknl', 11, 'Inglés'),
+(854, 'zk1m0ygknl', 15, 'Diseño Web'),
+(855, 'zk1m0ygknl', 15, 'Desarrollo Web'),
+(856, 'm161j9gb52', 1, 'Build Your Own Website: A Comic Guide to HTML, CSS, and WordPress'),
+(857, 'm161j9gb52', 2, 'Nate Cooper'),
+(858, 'm161j9gb52', 2, 'Kim Gee'),
+(859, 'm161j9gb52', 3, 'Build Your Own Website es una diversión, introducción ilustrada a los fundamentos de la creación de un sitio web. Únete a Kim y su pequeño perro Tofu mientras aprende HTML, el lenguaje de las páginas web, y CSS, el lenguaje utilizado en las páginas web de estilo, desde el Gurú Web y Glinda, la Bruja Buena del CSS.'),
+(860, 'm161j9gb52', 4, 'No Sarch Press'),
+(861, 'm161j9gb52', 6, '2014'),
+(862, 'm161j9gb52', 11, 'Inglés'),
+(863, 'm161j9gb52', 15, 'Diseño Web'),
+(864, 'm161j9gb52', 15, 'Desarrollo Web'),
+(865, 'm161j9gb52', 15, 'HTML'),
+(866, 'm161j9gb52', 15, 'CSS'),
+(867, 'dy0t4y8n61', 1, 'Service Design: From Insight to Implementation'),
+(868, 'dy0t4y8n61', 2, 'Andy Polaine'),
+(869, 'dy0t4y8n61', 2, 'Lavrans Lovlie'),
+(870, 'dy0t4y8n61', 2, 'Ben Reason'),
+(871, 'dy0t4y8n61', 3, 'Tenemos experiencias insatisfactorias cuando usamos los bancos, autobuses, servicios de salud y compañías de seguros. Ellos no nos hacen sentir más feliz o el más importante. ¿Por qué no están diseñadosí como los productos que amamos utilizar, como un iPod de Apple o un BMW? El mundo "desarrollado" ha ido más allá de la mentalidad industrial de los productos y la mayoría de los "productos" que encontramos en realidad son partes de una red de servicio más grande. Estos servicios comprenden la gente, la tecnología, los lugares, el tiempo y los objetos que forman toda la experiencia de servicio. En la mayoría de los casos algunos de los puntos de contacto están diseñados, pero en muchas situaciones el servicio como una ecología completa simplemente "sucede" y no está conscientemente diseñada en absoluto, por lo que no se sienten como iPods o BMW.'),
+(872, 'dy0t4y8n61', 4, 'Rosenfeld Media'),
+(873, 'dy0t4y8n61', 6, '2013'),
+(874, 'dy0t4y8n61', 11, 'Inglés'),
+(875, 'dy0t4y8n61', 15, 'Diseño'),
+(876, 'dy0t4y8n61', 15, 'Diseño de Productos'),
+(877, 'asryhn379c', 1, 'Android UI Design'),
+(878, 'asryhn379c', 2, 'Francesco Azzola'),
+(879, 'asryhn379c', 3, 'Android es un sistema operativo basado en kernel de Linux y diseñado principalmente para dispositivos móviles con pantalla táctil como teléfonos inteligentes y Tablet PC. Android OS, ha tomado el mundo de los dispositivos móviles y está creciendo rápidamente en los últimos años.\r\nLa nterfaz de usuario de Android se basa en la manipulación directa, usando entradas táctiles que vagamente se corresponden con las acciones del mundo real, como deslizar, tocar, pellizcar y revertir pellizcar para manipular objetos en pantalla. La respuesta a la entrada del usuario está diseñado para ser\r\ninmediata y proporciona una interfaz táctil de fluido.\r\n'),
+(880, 'asryhn379c', 4, 'Java Code Geeks'),
+(881, 'asryhn379c', 6, '2014'),
+(882, 'asryhn379c', 11, 'Inglés'),
+(883, 'asryhn379c', 15, 'Android'),
+(884, 'asryhn379c', 15, 'Dispositivos móviles'),
+(885, 'asryhn379c', 15, 'Programación'),
+(886, 'uve0uiqe9s', 1, 'Pro HTML5 Accessibility'),
+(887, 'uve0uiqe9s', 2, 'John O Connor'),
+(888, 'uve0uiqe9s', 4, 'Apress'),
+(889, 'uve0uiqe9s', 6, '2012'),
+(890, 'uve0uiqe9s', 11, 'Inglés'),
+(891, 'uve0uiqe9s', 15, 'HTML'),
+(892, 'uve0uiqe9s', 15, 'Lenguajes'),
+(893, 'uve0uiqe9s', 15, 'Desarrollo Web'),
+(894, 'uve0uiqe9s', 3, 'Pro HTML5 Accessibility ayuda a los diseñadores con la construcción de interesantes, accesibles y utilizables sitios web y aplicaciones con HTML5. El libro cubre cómo utilizar HTML5 con el fin de atender las necesidades de las personas con discapacidad y las personas mayores que utilizan tecnología de asistencia (AT). Su objetivo es ser una guía útil ''ir'', proporcionando consejos prácticos. Se necesitan varios enfoques, incluyendo un vistazo a la nueva semántica de HTML5 y cómo combinar su uso con las prácticas de autoría de uso de versiones anteriores de HTML.');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

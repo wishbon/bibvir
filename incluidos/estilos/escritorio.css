@@ -91,7 +91,7 @@ div.contenido {
   padding: 70px 10px 0px 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 div.footer {
@@ -104,6 +104,14 @@ div.footer {
   div.footer p {
     padding: 10px; 
     color: darkgray;
+}
+div.footer p span.wget {
+  color: rgb(0, 174, 255);
+    background-color: rgba(0, 0, 0, 0.34);
+    padding: 4px 10px;
+    border-radius: 10px;
+    box-shadow: inset 0px 1px 10px black, inset -1px -1px 10px black;
+      font-weight: 100;
 }
     div.footer p span {
       font-weight: 900; }
@@ -315,7 +323,7 @@ width: 235px;
 form {
   display: initial;
 }
-input[type="search"], input[type="text"], textarea, select {
+input[type="search"], input[type="text"], input[type="password"], textarea, select {
   background: rgb(27, 27, 27);
   border: 1px solid rgb(65, 65, 65);
   height: 26px;

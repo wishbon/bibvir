@@ -97,7 +97,7 @@ if (isset($_POST['pass'])){
 			}else{
 			?>
 				<form method="POST">
-					<input type="text" name="pass" placeholder="Clave de acceso">
+					<input type="password" name="pass" placeholder="Clave de acceso">
 				</form>
 			<?php
 			}

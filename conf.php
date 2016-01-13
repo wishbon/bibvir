@@ -79,7 +79,7 @@ $conf['buscar'] = array(
 		'plantilla' => PLANTILLA );
 
 // ADMIN
-$conf['bibvir-admin'] = array(
+$conf['bv-admin'] = array(
 		'archivo' => 'admin.php',
 		'plantilla' => PLANTILLA_ADMIN );
 
