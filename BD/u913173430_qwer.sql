@@ -4,7 +4,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 13-01-2016 a las 13:54:27
+-- Tiempo de generación: 26-01-2016 a las 20:35:35
 -- Versión del servidor: 10.0.22-MariaDB
 -- Versión de PHP: 5.2.17
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `bv_archivos` (
   `archivo_peso` varchar(100) NOT NULL,
   `archivo_formato` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=195 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=199 ;
 
 --
 -- Volcado de datos para la tabla `bv_archivos`
@@ -212,7 +212,11 @@ INSERT INTO `bv_archivos` (`id`, `archivo_id`, `archivo_nombre`, `archivo_peso`,
 (191, 'asryhn379c', 'aud.zip', '0', 'a'),
 (192, 'asryhn379c', 'aud.png', '0', 'm'),
 (193, 'uve0uiqe9s', 'phabaiw.zip', '0', 'a'),
-(194, 'uve0uiqe9s', 'phabaiw.png', '0', 'm');
+(194, 'uve0uiqe9s', 'phabaiw.png', '0', 'm'),
+(195, 'dxdur1es3y', 'phacdp.zip', '0', 'a'),
+(196, 'dxdur1es3y', 'phacdp.png', '0', 'm'),
+(197, 'v7tf2hojgy', 'phg.zip', '0', 'a'),
+(198, 'v7tf2hojgy', 'phg.png', '0', 'm');
 
 -- --------------------------------------------------------
 
@@ -250,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `bv_documento` (
   `documento_id` varchar(10) NOT NULL,
   `coleccion_id` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=98 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=100 ;
 
 --
 -- Volcado de datos para la tabla `bv_documento`
@@ -342,7 +346,9 @@ INSERT INTO `bv_documento` (`id`, `documento_id`, `coleccion_id`) VALUES
 (94, 'm161j9gb52', 4),
 (95, 'dy0t4y8n61', 3),
 (96, 'asryhn379c', 5),
-(97, 'uve0uiqe9s', 4);
+(97, 'uve0uiqe9s', 4),
+(98, 'dxdur1es3y', 4),
+(99, 'v7tf2hojgy', 3);
 
 -- --------------------------------------------------------
 
@@ -389,7 +395,7 @@ CREATE TABLE IF NOT EXISTS `bv_elementos_cont` (
   `elemento_id` int(250) NOT NULL,
   `contenido` varchar(5000) CHARACTER SET latin1 NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=895 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 COLLATE=latin1_bin AUTO_INCREMENT=916 ;
 
 --
 -- Volcado de datos para la tabla `bv_elementos_cont`
@@ -1214,7 +1220,28 @@ INSERT INTO `bv_elementos_cont` (`id`, `documento_id`, `elemento_id`, `contenido
 (891, 'uve0uiqe9s', 15, 'HTML'),
 (892, 'uve0uiqe9s', 15, 'Lenguajes'),
 (893, 'uve0uiqe9s', 15, 'Desarrollo Web'),
-(894, 'uve0uiqe9s', 3, 'Pro HTML5 Accessibility ayuda a los diseñadores con la construcción de interesantes, accesibles y utilizables sitios web y aplicaciones con HTML5. El libro cubre cómo utilizar HTML5 con el fin de atender las necesidades de las personas con discapacidad y las personas mayores que utilizan tecnología de asistencia (AT). Su objetivo es ser una guía útil ''ir'', proporcionando consejos prácticos. Se necesitan varios enfoques, incluyendo un vistazo a la nueva semántica de HTML5 y cómo combinar su uso con las prácticas de autoría de uso de versiones anteriores de HTML.');
+(894, 'uve0uiqe9s', 3, 'Pro HTML5 Accessibility ayuda a los diseñadores con la construcción de interesantes, accesibles y utilizables sitios web y aplicaciones con HTML5. El libro cubre cómo utilizar HTML5 con el fin de atender las necesidades de las personas con discapacidad y las personas mayores que utilizan tecnología de asistencia (AT). Su objetivo es ser una guía útil ''ir'', proporcionando consejos prácticos. Se necesitan varios enfoques, incluyendo un vistazo a la nueva semántica de HTML5 y cómo combinar su uso con las prácticas de autoría de uso de versiones anteriores de HTML.'),
+(895, 'dxdur1es3y', 1, 'Pro HTML5 and CSS3 Design Patterns'),
+(896, 'dxdur1es3y', 2, 'Michael Bowers'),
+(897, 'dxdur1es3y', 2, 'Dionysios Synodinos'),
+(898, 'dxdur1es3y', 2, 'Victor Summer'),
+(899, 'dxdur1es3y', 3, 'Pro HTML5 and CSS3 Design Patterns es un libro de referencia y un libro de uso sobre cómo funciona el estilo de las páginas web utilizando CSS3 y HTML5. Contiene 350 patrones listos para usar (CSS3 y fragmentos de código HTML5) que se pueden copiar y pegar en el código.'),
+(900, 'dxdur1es3y', 4, 'Apress'),
+(901, 'dxdur1es3y', 6, '2011'),
+(902, 'dxdur1es3y', 11, 'Inglés'),
+(903, 'dxdur1es3y', 15, 'HTML'),
+(904, 'dxdur1es3y', 15, 'CSS'),
+(905, 'dxdur1es3y', 15, 'Desarrollo Web'),
+(906, 'dxdur1es3y', 15, 'Diseño Web'),
+(907, 'v7tf2hojgy', 1, 'Pro HTML5 Games'),
+(908, 'v7tf2hojgy', 2, 'Aditya Ravit Shankar'),
+(909, 'v7tf2hojgy', 3, 'Construya su próximo juego a una escala más grande con Pro HTML5 Games. Este libro te enseña los fundamentos de la programación de juegos avanzados en HTML5. Usted aprenderá las técnicas que se pueden transferir a cualquier área de desarrollo de juegos HTML5 para hacer sus propios juegos HTML5 profesionales!'),
+(910, 'v7tf2hojgy', 4, 'Apress'),
+(911, 'v7tf2hojgy', 6, '2012'),
+(912, 'v7tf2hojgy', 11, 'Inglés '),
+(913, 'v7tf2hojgy', 15, 'HTML'),
+(914, 'v7tf2hojgy', 15, 'VideoJuegos'),
+(915, 'v7tf2hojgy', 15, 'Diseño');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

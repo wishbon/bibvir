@@ -117,34 +117,70 @@ div.footer p span.wget {
       font-weight: 900; }
 
 table.lista {
-  border-spacing: 0px;
-  border-color: #DFDFDF;
-  background-color: #F9F9F9;
-  border-width: 1px 0;
-  border-width: 1px;
+  background-color: rgba(22, 22, 22, 0.76);
   border-style: solid;
-  -moz-border-radius: 3px;
-  -khtml-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
-  width: 100%;
-  margin: 10px 0px 0px 0px; }
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.72);
+  width: 465px;
+  border-collapse: separate;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 25px;
+  }
   table.lista th {
-    border-top-color: white;
-    border-bottom-color: #DFDFDF;
+    /* border-top-color: white; */
+    /* border-bottom-color: #DFDFDF; */
     border-width: 1px 0;
     border-style: solid;
-    background-color: #F9F9F9;
+    /* background-color: #F9F9F9; */
     padding: 5px;
-    background-image: -ms-linear-gradient(top, #f9f9f9, #ececec);
-    background-image: -moz-linear-gradient(top, #f9f9f9, #ececec);
-    background-image: -o-linear-gradient(top, #f9f9f9, #ececec);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ececec));
-    background-image: -webkit-linear-gradient(top, #f9f9f9, #ececec);
-    background-image: linear-gradient(top, #f9f9f9, #ececec); }
+    background-image:
+
+
+
+
+
+
+
+
+    -ms-linear-gradient(top, #f9f9f9, #ececec);
+    background-image:
+
+
+
+
+
+
+
+
+    -moz-linear-gradient(top, #f9f9f9, #ececec);
+    background-image:
+
+
+
+
+
+
+
+
+    -o-linear-gradient(top, #f9f9f9, #ececec);
+    /* background-image:
+
+
+    -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#ececec)); */
+    /* background-image:
+
+
+
+    -webkit-linear-gradient(top, #f9f9f9, #ececec); */
+    background-image: linear-gradient(top, #f9f9f9, #ececec);
+    }
   table.lista td {
-    border-bottom: 1px dotted #e1e1e1;
-    padding: 4px; }
+    padding: 4px;
+    border-bottom: 1px solid rgb(47, 47, 47);
+    border-top: 1px solid rgb(13, 13, 13);
+    vertical-align: middle;
+    }
 
 p.error {
   font-size: small;
@@ -435,4 +471,10 @@ td.metadato {
 .cargadoc td {
   padding:5px 0;
   vertical-align: middle;
+}
+.portada-lista {
+  width: 65px;
+}
+a[name="editar"] img {
+  width: 20px;
 }

@@ -1,47 +1,70 @@
 <?php
-	if (isset($_GET['info'])){
-	echo $_GET['info']."<br>";
-	}
-?>
-<table class="lista">
-	<tr>
-		<th>Título</th>
-		<th>Colección</th>
-		<th></th>
-		<th></th>
+if (isset($_GET['error'])){
+	echo $_GET['error']."<br>";
+}
 
-	</tr>
-<?php
+$documento = $_GET['documento'];
+$result = mysql_query("SELECT * FROM bv_elementos_cont WHERE bv_elementos_cont.documento_id=$documento");
+while($row = mysql_fetch_assoc($result))
+{
+	?>
 
-	
-	$result = mysql_query("SELECT * FROM bv_documento, bv_coleccion WHERE bv_documento.coleccion_id = bv_coleccion.coleccion_id ORDER BY bv_documento.coleccion_id ASC");
+				<h2>Editar documento</h2>
+				<table>
+					<tr>
+						<td>Colección</td>
+						<td><select name="coleccion" required>
+							<option value="">Seleccione</option>
 
-		while ($row = mysql_fetch_array($result)) {
-?>
-<script type="text/javascript" >
-		function borrar() {
-		if(confirm("¿Quieres borrar este documento?")) {
-		document.location.href= '';
-	}
-	} 
-</script>
-	<tr>
-		<td><?php echo $row['coleccion_id'] ?></td>
-		<td><?php echo $row['nombre'] ?></td>
-		<td>
-			<a href="?modulo=proceso&borrardoc=<?php echo $row['coleccion_id']?>" onclick="borrar();" name="borrardoc">
-			<img src="incluidos/imagenes/borrar.png">
-			</a>
-		</td>
-		<!-- SIN ESTA FUNCION POR AHORA 
-		<td>
-			<a href="?modulo=edcole&<?php echo $row['id_doc']?>" name="editar">
-			<img src="incluidos/imagenes/editar.png">
-			</a>
-		</td>-->
-	</tr>
-	<?php } ?>
-</table>
-<div class="admin">
-<small><a class="adocu" href="?modulo=adocu">Agregar documento</a></small>
-</div>
+								<option value="<?php echo $row['documento_id'] ?>"><?php echo $row['nombre'] ?></option>
+								<?php } ?>
+							</select></td>
+						</tr>
+						<tr>
+							<td>Titulo</td>
+							<td><input type="text" name="titulo" required value="" /></td>
+						</tr>
+						<tr>
+							<td>Autor</td>
+							<td><input type="text" name="autor" required /></td>
+						</tr>
+						<tr>
+							<td>Resumen:</td>
+							<td><textarea name="resumen" required></textarea></td>
+						</tr>
+						<tr>
+							<td>Fecha:</td>
+							<td><input type="text" name="fecha" required /></td>
+						</tr>
+						<tr>
+							<td>Editor:</td>
+							<td><input type="text" name="editor" required /></td>
+						</tr>
+						<tr>
+							<td>Idioma:</td>
+							<td><input type="text" name="idioma" required /></td>
+						</tr>
+						<tr>
+							<td>Tema:</td>
+							<td><input type="text" name="tema" required /></td>
+						</tr>
+
+						<tr>
+							<td>Documento</td>
+							<td>
+								<INPUT class="documento" required="required" type="file" name="archivo" value="Archivo" size="30">
+
+								</td>
+							</tr>
+							<tr>
+								<td>Portada</td>
+								<td>
+									<INPUT class="portada" required="required" type="file" name="imagen" value="Miniatura" size="30">
+									</td>
+								</tr>
+							</table>
+							<br />
+							<br />
+							<input type="submit" name="adocu" value="Subir documento">
+						</form>
+					</div>

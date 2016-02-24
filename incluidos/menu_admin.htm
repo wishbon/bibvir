@@ -1,10 +1,10 @@
-<div class="menu">
+<div class="menu escritorio">
 	<ul>
 		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
-		<li><?php echo $lang['MENU_CATEGORIAS']; ?>
+		<!--<li><?php echo $lang['MENU_CATEGORIAS']; ?>
 				<ul>
 				<?php
-					$result = mysql_query("SELECT * FROM bv_coleccion ORDER BY bv_coleccion.coleccion_id DESC ");
+					$result = mysql_query("SELECT * FROM bv_coleccion ORDER BY bv_coleccion.nombre ASC ");
 						while ($row = mysql_fetch_array($result)) {
 				?>
 					<li>
@@ -13,21 +13,94 @@
 				<?php } ?>
 				</ul>
 
-		</li>
-		<li>Etquetas
+		</li>-->
+		<li><?php echo $lang['MENU_ETIQUETAS']; ?>
 				<ul>
 				<?php
-					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=15");
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=15 ORDER BY contenido ASC");
 						while ($row = mysql_fetch_array($result)) {
 				?>
 					<li>
-						<a href="?modulo=fichatag&tag=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+						<a href="?modulo=tema&tema=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
 					</li>
 				<?php } ?>
 				</ul>
 		</li>
-		<li><a href="?modulo=bibvir-admin"><?php echo $lang['MENU_ADMIN']; ?></a></li>
-		<li style="float:right"><a href="index.php?lang=en">Eng</a>
-				<a href="index.php?lang=es">Esp</a></li>
+				<li><?php echo $lang['MENU_AUTORES']; ?>
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=2 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=autor&autor=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>Editorial↡
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=4 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=editorial&editorial=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>Fecha↡
+				<ul class="fecha">
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=6 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=fecha&fecha=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>
+		<li>Admin
+			<ul>
+			<li>Admin documento</li>
+			<li>Admin colecciones</li>
+			</ul>
+		</li>
+		<li style="float:right">
+			<form action="index.rb?modulo=buscar" method="get">
+				<input type="hidden" name="modulo" value="buscar" />
+				<input autofocus="autofocus" type="search" required="required" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
+			</form>
+		<!--<a href="index.rb?lang=es"><?php echo $lang['ESPANOL']; ?></a>
+		<a href="index.rb?lang=en"><?php echo $lang['INGLES']; ?></a>-->
+		</li>
+
+	</ul>
+
+</div>
+
+<div class="menu movil">
+	<ul>
+		<li><a href="?modulo=home"><?php echo $lang['MENU_INICIO']; ?></a></li>
+		<!--<li><?php echo $lang['MENU_ETIQUETAS']; ?>
+				<ul>
+				<?php
+					$result = mysql_query("SELECT DISTINCT elemento_id,contenido FROM bv_elementos_cont where elemento_id=15 ORDER BY contenido ASC");
+						while ($row = mysql_fetch_array($result)) {
+				?>
+					<li>
+						<a href="?modulo=tema&tema=<?php echo $row['contenido']; ?>"><?php echo $row['contenido']; ?></a>
+					</li>
+				<?php } ?>
+				</ul>
+		</li>-->
+		<li>
+			<form action="index.rb?modulo=buscar" method="get">
+				<input type="hidden" name="modulo" value="buscar" />
+				<input autofocus="autofocus" type="search" required="required" name="terminos" placeholder="<?php echo $lang['MENU_BUSCADOR']; ?>">
+			</form>
+		</li>
 	</ul>
 </div>

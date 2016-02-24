@@ -3,7 +3,7 @@
 	include('incluidos/principio.htm'); 
 	include('incluidos/estadisticas.htm');  
 	include('incluidos/header.htm');
-	include('incluidos/menu.htm');  
+	include('incluidos/menu_admin.htm');
 ?>
 <div class="contenido">
 	<?php

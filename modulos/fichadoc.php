@@ -2,19 +2,19 @@
 <table>
 	<tr>
 	<td rowspan="7" class="miniatura">
-		<?php 
+		<?php
 		$iddoc=$_GET['id'];
 		$result = mysql_query("SELECT * FROM bv_archivos WHERE bv_archivos.archivo_formato='m' AND bv_archivos.archivo_id = '$iddoc'");
 		while ($row = mysql_fetch_array($result)) {
 		?>
-		<a href="http://srv2.cpanelhost.cl/~cl119365/subidos/<?php 
+		<a href="http://srv12.cpanelhost.cl/~cl119365/subidos/<?php 
 				$resulta = mysql_query("SELECT * FROM bv_archivos WHERE bv_archivos.archivo_formato='a' AND bv_archivos.archivo_id = '$iddoc'");
 		while ($rowe = mysql_fetch_array($resulta)) {
 			echo $rowe['archivo_nombre'];
 		}
 		 ?>">
-		 
-		<img src="http://srv2.cpanelhost.cl/~cl119365/subidos/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura"></a><br /><br />
+
+		<img src="http://srv12.cpanelhost.cl/~cl119365/subidos/<?php echo $row['archivo_nombre']; ?>" alt="" title="" class="miniatura"></a><br /><br />
 		<!-- compartir en facebook -->
 
 		<a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fp4r4g33k5.esy.es%2F%3Fmodulo%3Dfichadoc%26id%3D<?php echo $iddoc ?>%23.VcfaTL50jSc.facebook','name','height=455,width=470,toolbar=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no');return false;"><img src="incluidos/imagenes/facebook.png" title="Compartir esta joya en Facebook"></a>
@@ -46,7 +46,7 @@
 				echo '<a href="?modulo=autor&autor='.$row['contenido'].'">';
 				echo $row['contenido'];
 				echo '</a> <span class="separador">-</span> ';
-			} ?></a> 
+			} ?></a>
 
 		</td>
 	</tr>

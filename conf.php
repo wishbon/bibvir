@@ -79,28 +79,33 @@ $conf['buscar'] = array(
 		'plantilla' => PLANTILLA );
 
 // ADMIN
-$conf['bv-admin'] = array(
+$conf['admin'] = array(
 		'archivo' => 'admin.php',
-		'plantilla' => PLANTILLA_ADMIN );
+		'plantilla' => PLANTILLA );
 
 // AGREGAR DOCUMENTO
 $conf['adocu'] = array(
 		'archivo' => 'adocu.php',
-		'plantilla' => PLANTILLA_ADMIN );
+		'plantilla' => PLANTILLA );
 
 // AGREGAR COLECCION
 $conf['acole'] = array(
 		'archivo' => 'acole.php',
-		'plantilla' => PLANTILLA_ADMIN );
+		'plantilla' => PLANTILLA );
 
 // ELIMINAR DOCUMENTO
-$conf['edocu'] = array(
-		'archivo' => 'edocu.php',
+$conf['ldocu'] = array(
+		'archivo' => 'ldocu.php',
 		'plantilla' => PLANTILLA );
 
 // ELIMINAR COLECCION
 $conf['ecole'] = array(
 		'archivo' => 'ecole.php',
+		'plantilla' => PLANTILLA );
+
+// ELIMINAR COLECCION
+$conf['edocu'] = array(
+		'archivo' => 'edocu.php',
 		'plantilla' => PLANTILLA );
 
 // PROCESAR TODO
